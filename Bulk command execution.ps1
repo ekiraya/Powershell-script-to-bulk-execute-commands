@@ -2,7 +2,7 @@ $selected_vms = Get-AzVM | Out-GridView -OutputMode Multiple
 
 $script = @"
 
-gpupdate /force
+#your code goes here
 
 "@
 
