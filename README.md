@@ -1,3 +1,6 @@
-# Powershell-script-to-bulk-execute-commands
+<h1>PowerShell script to bulk execute cmd commands</h1>
 
-<p>Hi my guy</p>
+<h2>Summary</h2>
+<p>System administrators often need to run commands on client machines as part of their job. For instance, a system administrator may do a GPO configuration and then run <codce>gpupdate /force</codce> to force the GPO configuration changes to be applied immediately, or he may need to run <code>ipconfig /all</code> to start trying to figure out a networking problem on a specific machine. This workflow of going to the specific machine where we need to execute the commands and simply type them out may be good when working with a small number of computers. Nevertheless, this falls short when working with 20 or 30 clients at the same time</p>
+<p>For instance, say you need to execute <codce>gpupdate /force</codce> on 30 machines at the same time, well even if it just takes you 5 minutes to go and manually execute it for each machine, that time would quickly add up to 150 minutes or about 2 and a half hours.</p>
+<p>In this project, I showcase a PowerShell script that aims to solve that problem by allowing the user to execute multiple cmd scripts on various machines at the same time in a matter of minutes. Thus, greatly reducing the time a system administrator would need to put into the task</p>
