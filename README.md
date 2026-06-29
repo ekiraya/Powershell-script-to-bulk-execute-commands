@@ -5,8 +5,6 @@
 <p>For instance, say you need to execute <code>gpupdate /force</code> on 30 machines; well, even if it just takes you 5 minutes to go and manually execute it for each machine, that time would quickly add up to 150 minutes or about 2 and a half hours.</p>
 <p>In this project, I showcase a PowerShell script that aims to solve that problem by allowing the user to execute multiple cmd scripts on various machines at the same time in a matter of minutes. Thus, greatly reducing the time a system administrator would need to put into the task</p>
 
-<p>Add a table with times like you often like to do, bruh</p>
-
 <h2>List of Prerequisites</h2>
 
 - To have a VM or physical computer where you want to install osTicket
@@ -52,6 +50,8 @@ foreach($vm in $selected_vms){
 <p>And here you explain it line by line</p>
 
 <h2>Demostration</h2>
+<p>Add a table with times like you often like to do, bruh</p>
+
 <h2>Intended use cases</h2>
 <h2>Intended usege considerations</h2>
 <p>Add the fact that the display GPO needs additional configuration</p>
