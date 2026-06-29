@@ -18,6 +18,7 @@
 - Log execution results to file
 
 <h2>Index</h2>
+<p>Maybe remove the index</p>
 
 <h2>How it works</h2>
 
