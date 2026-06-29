@@ -12,31 +12,32 @@
 - To have a VM or physical computer where you want to install osTicket
 
 <h2>How it works</h2>
-<code>
-  $selected_vms = Get-AzVM | Out-GridView -OutputMode Multiple
-  
-  $script = @"
-  
-  gpupdate /force
-  
-  "@
-  
-  foreach($vm in $selected_vms){
-  
-      Write-Host "Currently working on VM:" $vm.Name 
-  
-      $reply = Invoke-AzVMRunCommand `
-      -VMName $vm.Name `
-      -ResourceGroupName $vm.ResourceGroupName `
-      -ScriptString $script `
-      -CommandId "RunPowerShellScript"
-  
-      $reply.Value[0].Message
-  
-      Write-Host "---------------------------"
+
+```commandline
+$selected_vms = Get-AzVM | Out-GridView -OutputMode Multiple
+
+$script = @"
+
+#your command goes here
+
+"@
+
+foreach($vm in $selected_vms){
+
+    Write-Host "Currently working on VM:" $vm.Name 
+
+    $reply = Invoke-AzVMRunCommand `
+    -VMName $vm.Name `
+    -ResourceGroupName $vm.ResourceGroupName `
+    -ScriptString $script `
+    -CommandId "RunPowerShellScript"
+
+    $reply.Value[0].Message
+
+    Write-Host "---------------------------"
 
 }
-</code>
+```
 <h2>Usage walkthrough</h2>
 <h2>Intended usage cases</h2>
 <p>Add the fact that the VM needs to be turned on</p>
