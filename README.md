@@ -11,7 +11,7 @@
 
 - To have a VM or physical computer where you want to install osTicket
 
-<h2>Code walkthrough</h2>
+<h2>How it works</h2>
 <code>
   $selected_vms = Get-AzVM | Out-GridView -OutputMode Multiple
   
