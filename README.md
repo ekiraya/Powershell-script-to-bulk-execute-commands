@@ -61,3 +61,6 @@ foreach($vm in $selected_vms){
 <p>Add stuff like executing the script from a file</p>
 <p>And saving the results to a file</p>
 <p>Formating saved results</p>
+
+<h2>Related projects</h2>
+<p>And you add the dhcp here</p>
