@@ -2,7 +2,7 @@ $selected_vms = Get-AzVM | Out-GridView -OutputMode Multiple
 
 $script = @"
 
-#your code goes here
+#your command goes here
 
 "@
 
