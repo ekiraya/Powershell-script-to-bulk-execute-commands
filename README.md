@@ -8,7 +8,6 @@
 <h2>List of Prerequisites</h2>
 
 - To have a VM or physical computer where you want to install osTicket
-- To 
 
 <h2>Features</h2>
 
